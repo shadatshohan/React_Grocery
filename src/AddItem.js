@@ -8,7 +8,7 @@ const AddItem = ({newItem,setNewItem,handleSubmit}) => {
     <form className="addForm" onSubmit={handleSubmit}>
         <label htmlFor="addItem">Add Item</label>
         <input 
-         autoFocus
+          autoFocus
           type="text"
           ref={introRef}
           id="addItem"
@@ -20,7 +20,7 @@ const AddItem = ({newItem,setNewItem,handleSubmit}) => {
         <button
           type="submit"
           aria-label='Add Item'
-          onclick={()=>introRef.current.focus()}
+          onClick={()=>introRef.current.focus()}
         >
             <FaPlus/>
         </button>
